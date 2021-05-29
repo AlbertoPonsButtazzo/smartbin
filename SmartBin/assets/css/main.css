@@ -1,0 +1,240 @@
+/* HOJA DE ESTILO PREDETERMINADA */
+/* DEFAULT STYLE SHEET */
+
+/* Generales */
+/* General */
+
+body {
+  padding-top: 2%;
+  font: 12px/18px "Times New Roman", Times, serif;
+}
+
+.banner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  width: 90%;
+  -webkit-box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.75);
+  margin: 0 auto;
+}
+
+.header {
+  clear: both;
+  padding: 0.5%;
+  background: linear-gradient(#698aff, white);
+  border-bottom: 1px lightgrey solid;
+}
+
+/* Títulos */
+/* Titles */
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: normal;
+  text-align: center;
+  background: #698aff;
+  color: white;
+  width: 85%;
+  margin: 0 auto;
+  padding: 1% 1% 1% 1%;
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: normal;
+  text-align: center;
+  background: #698aff;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.5% 0.5% 0.5% 0.5%;
+}
+
+/* Botón para buscar */
+/* Search button */
+
+.buscar input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 55%;
+  background: #f1f1f1;
+}
+
+.buscar button[type="submit"] {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #ff6000;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.buscar button[type="submit"]:hover {
+  background: #f06000;
+}
+
+.buscar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Botón para importar y cambiar de gráfica */
+/* Button to import and change chart */
+
+.form-horizontal input[type="file"] {
+  overflow: hidden;
+}
+
+.form-horizontal button {
+  width: 10%;
+  background-color: #698aff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-horizontal button:hover {
+  background-color: #4da8da;
+}
+
+/* Desplegables */
+/* Drop-downs */
+
+a.desplegableButtonMaster {
+  color: white;
+}
+
+a.desplegableButtonMaster:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* Tabla */
+/* Table */
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  overflow: hidden;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.registrosColumnas {
+  color: white;
+  background-color: #698aff;
+}
+
+th a {
+  color: white;
+}
+
+td,
+th {
+  word-wrap: break-word;
+  border: 2px solid black;
+  text-align: center;
+}
+
+/* Gráficos */
+/* Charts */
+
+.datosGenerales,
+.pesosMedios,
+.pesosTotales,
+.registros,
+.graficaPesos,
+.configuracion {
+  margin-top: 3%;
+}
+
+.ejemplo {
+  margin-top: 6%;
+}
+
+.datosGenerales p {
+  font-size: 1.25em;
+  font-weight: normal;
+  text-align: center;
+  color: white;
+  margin-left: 8%;
+  margin-top: 2%;
+  border-radius: 25px;
+  padding: 20px;
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+}
+
+.configuracion input {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-left: 11%;
+}
+
+.registrosTotales {
+  background: #4da8da;
+}
+
+.registrosSinPeso {
+  background: #007cc7;
+}
+
+.pesoMasAlto {
+  background: #004e7c;
+}
+
+.pesoMasBajo {
+  background: #3c1874;
+}
+
+.chartContainer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 370px;
+  width: 80%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* Spinner */
+/* Spinner */
+
+.loader {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
